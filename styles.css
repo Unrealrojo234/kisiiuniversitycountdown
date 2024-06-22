@@ -1,0 +1,152 @@
+.my-loader{
+    /* background-color: #3a4b8a; */
+    position: fixed;
+    top: 30%;
+    left:50%;
+    right: 40%;
+    z-index: 100;
+    display: inline-block;
+}
+
+body{
+    background: #4B4453;
+    z-index: 5000;
+    color: rgb(228, 221, 221);
+}
+/* Fonts Used */
+h1{
+    font-family:sofia ,serif ;
+    
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("images/kisii_logo-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin: auto;
+}
+.date{
+    border: 1px solid #845EC2;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px 5px;
+    margin: 10px;
+    font-family: "Audiowide";
+}
+
+/* progress bar */
+.p-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid #845EC2;
+}
+
+.progress-circle span {
+    font-size: 2rem;
+    position: absolute;
+}
+
+
+/* time cards */
+.card-time{
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #845EC2;
+    font-family: "Audiowide";
+}
+.row{
+    padding: 16px;
+}
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quotes-Card */
+.bgblue {
+    background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+    padding: 1px;
+    border-radius: 1.2rem;
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border: 1px solid #845EC2;
+    
+  }
+.bgblue h3,q{
+    font-family: "Sofia";
+}
+
+@media (max-width:480px) {
+    .bgblue{
+        width: 90%;
+    }
+}
+  
+.q-card {
+    font-size: 1rem;
+    color: #bec4cf;
+    background: linear-gradient(135deg, #0d1120 0%,#00C1A3 43%, #0d1120 100%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+  }
+.time-count span{
+    font-size: larger;
+}
+
+/* loader */
+.loader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bar {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    animation: scale-up4 1s linear infinite;
+  }
+  
+  .bar:nth-child(2) {
+    height: 35px;
+    margin: 0 5px;
+    animation-delay: .25s;
+  }
+  
+  .bar:nth-child(3) {
+    animation-delay: .5s;
+  }
+  
+  @keyframes scale-up4 {
+    20% {
+      background-color: #ffff;
+      transform: scaleY(1.5);
+    }
+  
+    40% {
+      transform: scaleY(1);
+    }
+  }
+#percentage{
+    font-family: "sofia";
+}

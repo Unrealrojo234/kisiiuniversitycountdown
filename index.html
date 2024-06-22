@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisii University Countdown</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
+    <script src="loader.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66768548e91376001d5bae59&product=sticky-share-buttons&source=platform" async="async"></script>
+</head>
+
+<body id="body">
+    <div class="container-fluid my-loader text-center">
+        
+        <div class="loader" id="loader">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+    </div>
+    
+    <header>
+        <div class="container-fluid">
+            <h1 class="text-center font-effect-shadow-multiple">Kisii University 2024 Admission Day Countdown</h1>
+        </div>
+        <div class="logo ">
+
+        </div>
+        <div class="date animate__animated animate__bounce animate__infinite animate__slower">
+            <h3><label for="date">Date:</label><span id="day"></span>/<span id="month"></span>/<span id="year"></span></h3>
+        </div>
+    </header>
+    <hr>
+    <main class="container-fluid">
+        <section>
+            <div class="p-container ">
+                <div class="progress-circle card">
+                    <span  id="percentage">0%</span>
+                </div>
+            </div>
+        </section>
+        <section class="time-count">
+            <div id="contents" class="row">
+                <div class="card card-time col-xs-4">
+                    <h3 class="card-title text-muted text-center">Days</h3>
+                    <h6 class="card-text text text-center"> <span  id="remDays"></span></h6>
+                </div>  
+                <div class="card col-xs-4 card-time">
+                    <h3 class="card-title text-muted text-center" >Hours</h3>
+                    <h6 class="card-text text-center"><span id="remHours"></span></h6>
+                </div>  
+                <div class="card col-xs-4 card-time">
+                    <h3 class="card-title text-center text-muted">Minutes</h3>
+                    <h6 class="card-text  text-center"> <span id="remMinutes"></span></h6>
+                </div>  
+                <div class="card col-xs-4 card-time">
+                    <h3 class="card-title text-center text-muted">Seconds</h3>
+                    <h6 class="card-text text-center"> <span id="remSeconds"></span></h6>
+                </div>  
+            </div>
+        </section>
+        
+    </main>
+    <hr>
+    <main class="container-fluid">
+        <section>
+            <h1 class="text-center">Map</h1>
+            <div class="map ratio ratio-21x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.53953388457!2d34.77702807347541!3d-0.6773286352606357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3dd04270c3e3%3A0xe01a8e17b80b8b2d!2sKisii%20university%20main%20campus!5e0!3m2!1sen!2ske!4v1718975225545!5m2!1sen!2ske" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="bgblue card">
+                <div class="q-card card ">
+                    <h3 class="card-title text-center">QUOTE OF THE DAY</h3>
+                    <hr>
+                    <h6>
+                        <q>
+                            Everybody is a genius. But if you judge a fish by it's ability to climb a tree, it will live it's whole life believing that it is stupid
+                        </q>
+                        <br>
+                        <span class="text-muted font-effect-fire">_Albert Einstein</span>
+                    </h6>
+                </div>
+              </div>
+              
+        </section>
+        <br>
+        <section>
+            <!-- <div class="sharethis-sticky-share-buttons"></div> -->
+            <div class="sharethis-inline-share-buttons"></div>
+        </section>
+    </main>
+    <hr>
+    <footer class="container-fluid">
+        <p>&copy;2024 Rojo's Ltd. All Rights Are Reserved</p>
+    </footer>
+</body>
+</html>
