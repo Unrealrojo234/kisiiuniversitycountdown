@@ -24,10 +24,14 @@ const month = new Date().getMonth();
 const year = new Date().getFullYear();
 
 //current date
-document.getElementById("day").innerText = day;
-document.getElementById("month").innerText = month+1;
-document.getElementById("year").innerText = year;
+function date(){
+    document.getElementById("day").innerText = day;
+    document.getElementById("month").innerText = month+1;
+    document.getElementById("year").innerText = year;
 
+}
+date();
+setInterval(date,1000);
 
 //function for calculating remaining time
 function countdown() {
@@ -72,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const start = new Date(`June 1, ${currentYear}`);
         const totalDays = (admission - start) / (1000 * 60 * 60 * 24);
         const daysPassed = (today - start) / (1000 * 60 * 60 * 24);
-        const percentage = Math.min(100, Math.max(0, 100 - (daysPassed / totalDays) * 100));
+        const percentage = Math.min(100, Math.max(0, (daysPassed / totalDays) * 100));
         
         if(percentage<=100){
             percentageElement.textContent = `${Math.round(percentage)}%`;

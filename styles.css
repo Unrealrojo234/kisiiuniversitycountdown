@@ -1,9 +1,9 @@
 .my-loader{
     /* background-color: #3a4b8a; */
     position: fixed;
-    top: 30%;
+    top: 50%;
     left:50%;
-    right: 40%;
+    /* right: 40%; */
     z-index: 100;
     display: inline-block;
 }
@@ -120,15 +120,15 @@ h1{
   
   .bar {
     display: inline-block;
-    width: 3px;
-    height: 20px;
+    width: 4px;
+    height: 30px;
     background-color: rgba(255, 255, 255, .5);
     border-radius: 10px;
     animation: scale-up4 1s linear infinite;
   }
   
   .bar:nth-child(2) {
-    height: 35px;
+    height: 45px;
     margin: 0 5px;
     animation-delay: .25s;
   }
